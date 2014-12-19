@@ -42,7 +42,7 @@ if ($opm['opm_team_section_display']) {
                                         $socialSites = array("facebook", "pinterest", "twitter", "dribbble", "flickr", "github");
 
                                         foreach ($socialSites as $ss) {
-                                            if(!empty($tm_meta["_opm_{$ss}"])){
+                                            if($tm_meta["_opm_{$ss}"]!=""){
                                                 ?>
                                                 <a href="<?php echo $$tm_meta["_opm_{$ss}"];?>" target="_blank">
                                                     <span class="fa-stack fa-lg">

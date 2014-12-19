@@ -27,7 +27,7 @@ global $opm;
                     $socialSites = array("facebook", "pinterest", "twitter", "dribbble", "flickr", "github");
 
                     foreach ($socialSites as $ss) {
-                        if (!empty($opm['opm_social_' . $ss])) {
+                        if ($opm['opm_social' . $ss]!="") {
                             ?>
                             <li>
                                 <a href="<?php echo $opm['opm_social_' . $ss]; ?>"><i
