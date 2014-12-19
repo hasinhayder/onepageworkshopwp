@@ -45,6 +45,8 @@
             }
         });
 
+        /** Navigation Fix when there is no menu in Primary Menu location **/
+
         if (!$("div#navigation>div>ul").hasClass("list-inline")) {
             $("div#navigation>div>ul").addClass("pull-right list-inline");
         }
