@@ -99,7 +99,7 @@
                     //Specify if the admin menu should appear or not. Options: menu or submenu (Under appearance only)
                     'allow_sub_menu'     => true,
                     // Show the sections below the admin menu item or not
-                    'menu_title'         => __( 'OnePageMadness', 'opm' ),
+                    'menu_title'         => __( 'OPM Settings', 'opm' ),
                     'page_title'         => __( 'One Page Madness Settings', 'opm' ),
                     // You will need to generate a Google API key to use this feature.
                     // Please visit: https://developers.google.com/fonts/docs/developer_api#Auth
