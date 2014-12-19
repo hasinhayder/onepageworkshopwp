@@ -26,7 +26,7 @@ $sections[] = array(
         array(
             'id' => 'opm_service_section_description',
             'type' => 'editor',
-            'title' => __('Service Us Section Details', 'opm'),
+            'title' => __('Service Section Details', 'opm'),
             'default' => 'This was how Gregor received his food each day now, once in the morning while his parents and the maid were still asleep, and the second time after everyone had eaten their meal at midday as his parents would sleep for a little while then as well.',
         ),
         array(

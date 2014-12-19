@@ -16,8 +16,11 @@
         /* ============================================
          Testimonials
          ==============================================*/
+        var items = parseInt( $('.clients-say').find('.item').length );
+        var loop = 0;
+        if(items<=1) loop = 0;
         $('.clients-say').owlCarousel({
-            loop: true,
+            loop: loop,
             /*nav:true,
              navText: ["<i class='fa fa-chevron-left'></i>","<i class='fa fa-chevron-right'></i>"],*/
             autoHeight: true,
