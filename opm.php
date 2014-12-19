@@ -12,4 +12,6 @@ get_template_part("templates/sections/parallax2");
 get_template_part("templates/sections/experiences");
 get_template_part("templates/sections/testimonials");
 get_template_part("templates/sections/portfolio");
+get_template_part("templates/sections/blog");
+get_template_part("templates/sections/contact");
 get_footer("opm");

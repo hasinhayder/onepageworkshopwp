@@ -8,10 +8,50 @@
  */
 global $opm;
 ?>
+<footer>
+    <div class="container">
+        <div class="row">
+
+            <div class="col-md-6">
+                <?php
+                if (!dynamic_sidebar("footer")) {
+                    ?>
+                    <h2><?php echo $opm['opm_footer_section_title']; ?></h2>
+                    <?php echo $opm['opm_footer_section_description']; ?>
+                <?php } ?>
+            </div>
+
+            <div class="col-md-6 text-right">
+                <ul class="list-inline social-buttons">
+                    <?php
+                    $socialSites = array("facebook", "pinterest", "twitter", "dribbble", "flickr", "github");
+
+                    foreach ($socialSites as $ss) {
+                        if (!empty($opm['opm_social_' . $ss])) {
+                            ?>
+                            <li>
+                                <a href="<?php echo $opm['opm_social_' . $ss]; ?>"><i
+                                        class="fa fa-<?php echo $ss; ?>"></i></a>
+                            </li>
+                        <?php
+                        }
+
+                    }
+                    ?>
+                </ul>
+
+                <p class="copyright"><?php echo $opm['opm_footer_copyright']; ?> </a></p>
+
+            </div>
+
+        </div>
+    </div>
+</footer>
 <style type="text/css">
     #parallax1 {
         background-image: url(<?php echo $opm['opm_parallax1_section_image']['url'];?>);
     }
+
     #parallax2 {
         background-image: url(<?php echo $opm['opm_parallax2_section_image']['url'];?>);
     }
