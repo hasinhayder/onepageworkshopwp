@@ -176,3 +176,32 @@ require get_template_directory() . '/inc/custom-posts/cpt-testimonial.php';
 require get_template_directory() . '/inc/metaboxes/mb-service.php';
 require get_template_directory() . '/inc/metaboxes/mb-teammember.php';
 require get_template_directory() . '/inc/metaboxes/mb-testimonial.php';
+
+
+/** Extra Tags Field **/
+/* For adding custom field to gallery popup */
+function add_image_attachment_fields_to_edit($form_fields, $post)
+{
+
+    $form_fields["tags"] = array(
+        "label" => __("Tags", 'portex'),
+        "input" => "text", // this is default if "input" is omitted
+        "value" => get_post_meta($post->ID, "_tags", true),
+        "helps" => __("Comma separated tags for filtering", 'portex'),
+    );
+    unset($form_fields['post_content']);
+    return $form_fields;
+}
+
+add_filter("attachment_fields_to_edit", "add_image_attachment_fields_to_edit", null, 2);
+
+function add_image_attachment_fields_to_save($post, $attachment)
+{
+
+    if (isset($attachment['tags'])) {
+        update_post_meta($post['ID'], '_tags', $attachment['tags']);
+    }
+    return $post;
+}
+
+add_filter("attachment_fields_to_save", "add_image_attachment_fields_to_save", null, 2);
