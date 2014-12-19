@@ -6,4 +6,5 @@
 get_header("opm");
 get_template_part("templates/sections/aboutus");
 get_template_part("templates/sections/parallax1");
+get_template_part("templates/sections/services");
 get_footer("opm");
