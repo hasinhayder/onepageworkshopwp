@@ -10,10 +10,7 @@ add_filter( 'cmb2_meta_boxes', 'opm_service_metaboxes' );
 function opm_service_metaboxes(array $meta_boxes){
     $prefix = '_opm_';
 
-    /**
-     * Sample metabox to demonstrate each field type included
-     */
-    $meta_boxes['test_metabox'] = array(
+    $meta_boxes['service_metabox'] = array(
         'id'            => 'service_metabox',
         'title'         => __( 'Service Options', 'opm' ),
         'object_types'  => array( 'service', ), // Post type
