@@ -5,6 +5,9 @@
  * @package OnePageMadness
  */
 
+if ( ! isset( $content_width ) ) {
+    $content_width = 800; /* pixels */
+}
 
 if(!class_exists("CMB2")){
     require_once(dirname(__FILE__)."/libs/cmb/init.php");
@@ -30,9 +33,7 @@ function opm_setup() {
     /**
      * Set the content width based on the theme's design and stylesheet.
      */
-    if ( ! isset( $content_width ) ) {
-        $content_width = 800; /* pixels */
-    }
+
 
 	/*
 	 * Make theme available for translation.
