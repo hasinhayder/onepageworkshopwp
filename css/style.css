@@ -1,131 +1,137 @@
-body{
-    padding:0px;
-    margin:0px;
+body {
+    padding: 0px;
+    margin: 0px;
     font-family: "Open Sans", sans-serif;
 }
 
-.pt40{
-    padding-top:40px;
+/** bg color **/
+.bg-offWhite {
+    background-color: #eee;
 }
-.pb100{
-    padding-bottom:100px;
+
+.pt40 {
+    padding-top: 40px;
 }
-.topbar{
+.pt100 {
+    padding-top: 100px;
+}
+
+.pb100 {
+    padding-bottom: 100px;
+}
+.topbar {
     background-color: #fff;
 }
 
-.topbar ul{
-    margin:0px;;
-    padding:0px;
+.topbar ul {
+    margin: 0px;;
+    padding: 0px;
 }
 
-.topbar ul li{
- line-height: 80px;
+.topbar ul li {
+    line-height: 80px;
 }
 
-.topbar ul li.active{
+.topbar ul li.active {
     font-weight: 600;
-    color:#E64A19;
+    color: #E64A19;
     cursor: pointer;
 }
 
-.topbar ul li:hover{
-    color:#E64A19;
+.topbar ul li:hover {
+    color: #E64A19;
     cursor: pointer;
 }
 
-.topbar h1{
-    padding:0px;
-    margin:0px;
+.topbar h1 {
+    padding: 0px;
+    margin: 0px;
     line-height: 80px;
     font-size: 24px;
     font-weight: 600;
 }
 
-.banner{
+.banner {
     min-height: 600px;
     width: 100%;
     position: relative;
     overflow: hidden;
 }
 
-.wrap{
+.wrap {
     position: absolute;
     width: 100%;
     height: 1000px;
-    top:0;
-    left:0;
+    top: 0;
+    left: 0;
     background-color: rgba(0, 0, 0, 0.5);
 }
 
-.bannerhead{
+.bannerhead {
     margin-top: 220px;
     text-align: center;
 }
 
-.bannerhead h1{
+.bannerhead h1 {
     font-size: 48px;
     font-weight: 600;
     color: #fff;
     margin-bottom: 45px;
 }
 
-.bh-button{
+.bh-button {
     line-height: 50px;
     font-size: 24px;
-    padding:10px 25px;
+    padding: 10px 25px;
     margin-right: 12px;
     border: 2px solid #fff;
     color: #fff;
     border-radius: 5px;
 }
 
-.bh-button:hover{
+.bh-button:hover {
     color: #222;
     background-color: rgba(255, 255, 255, 0.7);
     border: 2px solid rgba(255, 255, 255, 0.7);
     text-decoration: none;
 }
 
-
 /** Sections **/
-.section{
-    padding-top:60px;
+.section {
+    padding-top: 60px;
     /*padding-bottom: 60px;*/
     border-bottom: 1px solid #ddd;
 }
 
-
- h1.section-title{
+h1.section-title {
     font-size: 28px;
     line-height: 60px;
     text-align: center;
     padding-bottom: 20px;
 }
 
-p.section-description{
+p.section-description {
     color: #666;
     font-weight: 300 !important;
     line-height: 36px;
 }
 
-.parallaxtext{
+.parallaxtext {
     font-size: 22px;
     color: #fff;
     font-weight: 400;
     line-height: 40px;
-    margin-top:90px;
+    margin-top: 90px;
 }
 
-#parallax1{
+#parallax1 {
     min-height: 470px;
     background-image: url(../img/parallax1.jpg);
     background-attachment: fixed;
     background-size: cover;
-
 }
 
-#parallax2{
+#parallax2 {
     min-height: 470px;
     background-image: url(../img/parallax2.jpg);
     background-attachment: fixed;
@@ -134,49 +140,48 @@ p.section-description{
 
 /** services **/
 
-.services{
+.services {
     margin-top: 30px;
 }
 
-.service{
-    margin-top:70px;
+.service {
+    margin-top: 70px;
 }
 
-.service i{
+.service i {
     color: #E64A19;
 }
-.service h2{
-    margin-top:40px;
+.service h2 {
+    margin-top: 40px;
     margin-bottom: 20px;
     font-size: 20px;
     font-weight: 600;
     text-transform: uppercase;
 }
 
-.service p{
+.service p {
     font-size: 16px;
     line-height: 30px;
     color: #555;
 }
 
 /** team **/
-#team{
+#team {
     background-color: #eeeeee;
 }
 
-
-.teams{
+.teams {
     /*margin-top: 30px;*/
 }
 
-.team{
-    margin-top:70px;
+.team {
+    margin-top: 70px;
 }
 
-.team img{
+.team img {
 }
-.team h2{
-    margin-top:80px;
+.team h2 {
+    margin-top: 80px;
     margin-bottom: 20px;
     font-size: 20px;
     font-weight: 600;
@@ -184,41 +189,54 @@ p.section-description{
     color: #E64A19;
 }
 
-.team p{
+.team p {
     font-size: 15px;
     line-height: 30px;
     color: #555;
     text-align: center;
 }
 
-.team p.social{
+.team p.social {
     margin-top: 40px;
 }
 
 /** experiences **/
-.exp{
-    margin-top:100px;
+.exp {
+    margin-top: 100px;
 }
-.exp-number{
+.exp-number {
     width: 150px;
-    height:150px;
+    height: 150px;
     border-radius: 75px;
     border: 5px solid #666;
-    margin:auto;
+    margin: auto;
     text-align: center;
     line-height: 150px;
     font-size: 55px;
     color: #666;
 }
 
-.exp-heading{
-    margin-top:30px;
+.exp-heading {
+    margin-top: 30px;
     font-size: 30px;
     font-weight: 600;
 }
 
+/** Testimonials **/
+.clients-say .img {
+    height: 120px;
+    width: 120px;
+    border: 5px solid #ffffff;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+}
 
-
-
-
-
+.clients-say h2 {
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #FF5722;
+}

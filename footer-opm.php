@@ -6,9 +6,23 @@
  *
  * @package OnePageMadness
  */
+global $opm;
 ?>
 
-
+<script type="text/javascript">
+    var banner_gallery = [];
+    <?php
+    $banner = array();
+    if($opm['opm_banner_gallery']){
+        $images= explode(",",$opm['opm_banner_gallery']);
+        foreach($images as $image){
+                $attachment = wp_get_attachment_image_src($image, "banner");
+                $banner[] = $attachment[0];
+        }
+    }
+    echo "banner_gallery = ".json_encode($banner).";";
+    ?>
+</script>
 <?php wp_footer(); ?>
 
 </body>

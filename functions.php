@@ -16,6 +16,12 @@ if(!class_exists("CMB2")){
     require_once(dirname(__FILE__)."/libs/cmb/init.php");
 }
 
+if ( !class_exists( 'ReduxFramework' ) && file_exists( dirname( __FILE__ ) . '/libs/redux-framework/ReduxCore/framework.php' ) ) {
+    require_once( dirname( __FILE__ ) . '/libs/redux-framework/ReduxCore/framework.php' );
+    require_once(dirname(__FILE__) . '/inc/admin.php');
+}
+
+
 if ( ! function_exists( 'opm_setup' ) ) :
 /**
  * Sets up theme defaults and registers support for various WordPress features.
@@ -78,6 +84,8 @@ function opm_setup() {
 		'default-color' => 'ffffff',
 		'default-image' => '',
 	) ) );
+
+    add_image_size("banner",1400,99999);
 }
 endif; // opm_setup
 add_action( 'after_setup_theme', 'opm_setup' );
@@ -119,11 +127,14 @@ function opm_scripts() {
 
     wp_enqueue_style("opm-bs",get_template_directory_uri()."/css/bootstrap.min.css");
     wp_enqueue_style("opm-fa",get_template_directory_uri()."/css/font-awesome.min.css");
+    wp_enqueue_style("opm-owl",get_template_directory_uri()."/css/owl.carousel.css");
+    wp_enqueue_style("opm-owl-theme",get_template_directory_uri()."/css/owl.theme.default.css");
     wp_enqueue_style("opm-google-os","//fonts.googleapis.com/css?family=Open+Sans:300,400,500,600,700,800,900");
     wp_enqueue_style("opm-css",get_template_directory_uri()."/css/style.css");
 
 
     wp_enqueue_script( 'opm-jbs', get_template_directory_uri() . '/js/jquery.backstretch.min.js', array("jquery"), '20130115', true );
+    wp_enqueue_script( 'opm-owl', get_template_directory_uri() . '/js/owl.carousel.min.js', array("jquery"), '20130115', true );
     wp_enqueue_script( 'opm-js', get_template_directory_uri() . '/js/script.js', array("jquery"), '20130115', true );
     wp_localize_script("opm-js","site",array("url"=>site_url("/"),"theme_path"=>get_template_directory_uri()));
 
