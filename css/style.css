@@ -110,7 +110,7 @@ h1.section-title {
     padding-bottom: 20px;
 }
 
-p.section-description {
+div.section-description {
     color: #666;
     font-weight: 300 !important;
     line-height: 36px;
