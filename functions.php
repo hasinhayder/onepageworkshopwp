@@ -88,6 +88,7 @@ function opm_setup() {
 	) ) );
 
     add_image_size("banner",1400,99999);
+    add_image_size("portfolio",600,9999);
 }
 endif; // opm_setup
 add_action( 'after_setup_theme', 'opm_setup' );
@@ -135,6 +136,7 @@ function opm_scripts() {
     wp_enqueue_style("opm-css",get_template_directory_uri()."/css/style.css");
 
 
+    wp_enqueue_script( 'opm-bs', get_template_directory_uri() . '/js/bootstrap.min.js', array("jquery"), '20130115', true );
     wp_enqueue_script( 'opm-jbs', get_template_directory_uri() . '/js/jquery.backstretch.min.js', array("jquery"), '20130115', true );
     wp_enqueue_script( 'opm-owl', get_template_directory_uri() . '/js/owl.carousel.min.js', array("jquery"), '20130115', true );
     wp_enqueue_script( 'opm-js', get_template_directory_uri() . '/js/script.js', array("jquery"), '20130115', true );

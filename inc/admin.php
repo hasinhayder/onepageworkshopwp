@@ -61,6 +61,7 @@
                 require_once (dirname(__FILE__)."/admin-panels/parallax2.php");
                 require_once (dirname(__FILE__)."/admin-panels/experiences.php");
                 require_once (dirname(__FILE__)."/admin-panels/testimonials.php");
+                require_once (dirname(__FILE__)."/admin-panels/portfolio.php");
                 $this->sections = $sections;
             }
 
