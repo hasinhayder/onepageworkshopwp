@@ -65,18 +65,18 @@
                 // Custom page help tabs, displayed using the help API. Tabs are shown in order of definition.
                 $this->args['help_tabs'][] = array(
                     'id'      => 'redux-help-tab-1',
-                    'title'   => __( 'Theme Information 1', 'redux-framework-demo' ),
-                    'content' => __( '<p>This is the tab content, HTML is allowed.</p>', 'redux-framework-demo' )
+                    'title'   => __( 'Theme Information 1', 'opm' ),
+                    'content' => __( '<p>This is the tab content, HTML is allowed.</p>', 'opm' )
                 );
 
                 $this->args['help_tabs'][] = array(
                     'id'      => 'redux-help-tab-2',
-                    'title'   => __( 'Theme Information 2', 'redux-framework-demo' ),
-                    'content' => __( '<p>This is the tab content, HTML is allowed.</p>', 'redux-framework-demo' )
+                    'title'   => __( 'Theme Information 2', 'opm' ),
+                    'content' => __( '<p>This is the tab content, HTML is allowed.</p>', 'opm' )
                 );
 
                 // Set the help sidebar
-                $this->args['help_sidebar'] = __( '<p>This is the sidebar content, HTML is allowed.</p>', 'redux-framework-demo' );
+                $this->args['help_sidebar'] = __( '<p>This is the sidebar content, HTML is allowed.</p>', 'opm' );
             }
 
             /**
@@ -99,8 +99,8 @@
                     //Specify if the admin menu should appear or not. Options: menu or submenu (Under appearance only)
                     'allow_sub_menu'     => true,
                     // Show the sections below the admin menu item or not
-                    'menu_title'         => __( 'Sample Options', 'redux-framework-demo' ),
-                    'page_title'         => __( 'Sample Options', 'redux-framework-demo' ),
+                    'menu_title'         => __( 'OnePageMadness', 'opm' ),
+                    'page_title'         => __( 'One Page Madness Settings', 'opm' ),
                     // You will need to generate a Google API key to use this feature.
                     // Please visit: https://developers.google.com/fonts/docs/developer_api#Auth
                     'google_api_key'     => '',
@@ -217,13 +217,13 @@
                     } else {
                         $v = str_replace( '-', '_', $this->args['opt_name'] );
                     }
-                    $this->args['intro_text'] = sprintf( __( '<p>Did you know that Redux sets a global variable for you? To access any of your saved options from within your code you can use your global variable: <strong>$%1$s</strong></p>', 'redux-framework-demo' ), $v );
+                    $this->args['intro_text'] = sprintf( __( '<p>Did you know that Redux sets a global variable for you? To access any of your saved options from within your code you can use your global variable: <strong>$%1$s</strong></p>', 'opm' ), $v );
                 } else {
-                    $this->args['intro_text'] = __( '<p>This text is displayed above the options panel. It isn\'t required, but more info is always better! The intro_text field accepts all HTML.</p>', 'redux-framework-demo' );
+                    $this->args['intro_text'] = __( '<p>This text is displayed above the options panel. It isn\'t required, but more info is always better! The intro_text field accepts all HTML.</p>', 'opm' );
                 }
 
                 // Add content after the form.
-                $this->args['footer_text'] = __( '<p>This text is displayed below the options panel. It isn\'t required, but more info is always better! The footer_text field accepts all HTML.</p>', 'redux-framework-demo' );
+                $this->args['footer_text'] = __( '<p>This text is displayed below the options panel. It isn\'t required, but more info is always better! The footer_text field accepts all HTML.</p>', 'opm' );
             }
 
         }
