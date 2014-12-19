@@ -8,7 +8,11 @@
  */
 global $opm;
 ?>
-
+<style type="text/css">
+    #parallax1 {
+        background-image: url(<?php echo $opm['opm_parallax1_section_image']['url'];?>);
+    }
+</style>
 <script type="text/javascript">
     var banner_gallery = [];
     <?php

@@ -21,25 +21,25 @@ $sections[] = array(
             'id'       => 'opm_banner_button1_text',
             'type'     => 'text',
             'title'    => __( 'Button 1 Text', 'opm' ),
-            'url' => 'true',
+            'default' => 'Know More',
         ),
         array(
             'id'       => 'opm_banner_button1_url',
             'type'     => 'text',
             'title'    => __( 'Button 1 url', 'opm' ),
-            'url' => 'true',
+            'default' => '#',
         ),
         array(
             'id'       => 'opm_banner_button2_text',
             'type'     => 'text',
             'title'    => __( 'Button 2 Text', 'opm' ),
-            'url' => 'true',
+            'default' => 'Contact',
         ),
         array(
             'id'       => 'opm_banner_button2_url',
             'type'     => 'text',
             'title'    => __( 'Button 2 url', 'opm' ),
-            'url' => 'true',
+            'default' => '#',
         ),
     )
 );

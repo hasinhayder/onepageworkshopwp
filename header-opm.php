@@ -6,7 +6,9 @@
  *
  * @package OnePageMadness
  */
-?><!DOCTYPE html>
+global $opm;
+?>
+<!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
     <meta charset="<?php bloginfo( 'charset' ); ?>">
@@ -39,8 +41,8 @@
             <div class="col-md-12">
                 <div class="bannerhead">
                     <h1><?php bloginfo( 'description' ); ?></h1>
-                    <a href="#" class="bh-button">Know More</a>
-                    <a href="#" class="bh-button">Contact</a>
+                    <a href="<?php echo $opm['opm_banner_button1_url'];?>" class="bh-button"><?php echo $opm['opm_banner_button1_text'];?></a>
+                    <a href="<?php echo $opm['opm_banner_button2_url'];?>" class="bh-button"><?php echo $opm['opm_banner_button2_text'];?></a>
                 </div>
             </div>
         </div>

@@ -54,6 +54,8 @@
 
                 // ACTUAL DECLARATION OF SECTIONS
                 require_once (dirname(__FILE__)."/admin-panels/banner.php");
+                require_once (dirname(__FILE__)."/admin-panels/aboutus.php");
+                require_once (dirname(__FILE__)."/admin-panels/parallax1.php");
                 $this->sections = $sections;
             }
 
