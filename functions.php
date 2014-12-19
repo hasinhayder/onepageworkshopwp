@@ -12,6 +12,10 @@ if ( ! isset( $content_width ) ) {
 	$content_width = 640; /* pixels */
 }
 
+if(!class_exists("CMB2")){
+    require_once(dirname(__FILE__)."/libs/cmb/init.php");
+}
+
 if ( ! function_exists( 'opm_setup' ) ) :
 /**
  * Sets up theme defaults and registers support for various WordPress features.
@@ -152,3 +156,6 @@ require get_template_directory() . '/inc/customizer.php';
  * Load Jetpack compatibility file.
  */
 require get_template_directory() . '/inc/jetpack.php';
+
+require get_template_directory() . '/inc/custom-posts/cpt-services.php';
+require get_template_directory() . '/inc/metaboxes/mb-service.php';
