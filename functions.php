@@ -218,3 +218,76 @@ function add_image_attachment_fields_to_save($post, $attachment)
 }
 
 add_filter("attachment_fields_to_save", "add_image_attachment_fields_to_save", null, 2);
+
+
+add_shortcode("row", "row");
+add_shortcode("twothird", "twothird");
+add_shortcode("onethird", "onethird");
+add_shortcode("half", "half");
+add_shortcode("threequarter", "threequarter");
+add_shortcode("quarter", "quarter");
+add_shortcode("full", "full");
+
+
+function row($attr, $content = null)
+{
+    $data = "<div class='row'>";
+    $data .= do_shortcode($content);
+    $data .= "</div>";
+    $data = str_replace("<br>", "", $data);
+    return $data;
+}
+
+function twothird($attr, $content = null)
+{
+    $data = "<div class='col-lg-8 col-md-8 col-sm-12 col-xs-12'>";
+    $data .= do_shortcode($content);
+    $data .= "</div>";
+    return $data;
+
+}
+
+function onethird($attr, $content = null)
+{
+    $data = "<div class='col-lg-4 col-md-4 col-sm-12 col-xs-12'>";
+    $data .= do_shortcode($content);
+    $data .= "</div>";
+    return $data;
+
+}
+
+function half($attr, $content = null)
+{
+    $data = "<div class='col-lg-6 col-md-6 col-sm-12 col-xs-12'>";
+    $data .= do_shortcode($content);
+    $data .= "</div>";
+    return $data;
+
+}
+
+function threequarter($attr, $content = null)
+{
+    $data = "<div class='col-lg-9 col-md-9 col-sm-12 col-xs-12'>";
+    $data .= do_shortcode($content);
+    $data .= "</div>";
+    return $data;
+
+}
+
+function quarter($attr, $content = null)
+{
+    $data = "<div class='col-lg-3 col-md-3 col-sm-12 col-xs-12'>";
+    $data .= do_shortcode($content);
+    $data .= "</div>";
+    return $data;
+
+}
+
+function full($attr, $content = null)
+{
+    $data = "<div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>";
+    $data .= do_shortcode($content);
+    $data .= "</div>";
+    return $data;
+
+}
